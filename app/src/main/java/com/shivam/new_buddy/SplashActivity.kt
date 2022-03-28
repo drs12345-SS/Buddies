@@ -24,9 +24,10 @@ class SplashActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        Handler().postDelayed(Runnable { //This method will be executed once the timer is over
+        Handler().postDelayed( { //This method will be executed once the timer is over
             // Start your app main activity
-            val i = Intent(this, DashboardActivity::class.java)
+//            val i = Intent(this, DashboardActivity::class.java)
+            val i = Intent(this, DetailActivity::class.java)
             startActivity(i)
             // close this activity
             finish()
